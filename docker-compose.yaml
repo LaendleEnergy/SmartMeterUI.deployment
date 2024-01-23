@@ -6,3 +6,7 @@ services:
     image: ghcr.io/laendleenergy/smartmeter_ui:latest
     ports:
       - "8084:3000"
+    entrypoint:
+      - NEXT_PUBLIC_HOST_DATACOLLECTOR=http://85.215.60.151:8080
+      - NEXT_PUBLIC_HOST_HOUSEHOLDMANAGEMENT=http://85.215.60.151:8082
+      - NEXT_PUBLIC_HOST_ACCOUNTMANAGEMENT=http://85.215.60.151:8081
