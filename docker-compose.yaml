@@ -10,3 +10,10 @@ services:
       - NEXT_PUBLIC_HOST_DATACOLLECTOR=http://85.215.60.151/collector
       - NEXT_PUBLIC_HOST_HOUSEHOLDMANAGEMENT=http://85.215.60.151/household
       - NEXT_PUBLIC_HOST_ACCOUNTMANAGEMENT=http://85.215.60.151/account
+    networks:
+      - redis
+
+networks:
+  redis:
+    name: redis
+    external: true 
