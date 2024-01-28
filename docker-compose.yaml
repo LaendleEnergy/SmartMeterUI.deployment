@@ -16,4 +16,4 @@ services:
 networks:
   redis:
     name: redis
-    external: true 
+    external: true
